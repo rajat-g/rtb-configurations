@@ -19,7 +19,3 @@ spring:
           uri: lb://service3
           predicates:
               - Path=/service3/**
-    config:
-      uri: http://localhost:8888
-  application:
-    name: gateway
