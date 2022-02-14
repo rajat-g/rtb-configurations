@@ -19,6 +19,9 @@ spring:
           uri: lb://service3
           predicates:
               - Path=/service3/**
+---
+spring:
+  profiles: docker
 eureka:
   client:
     serviceUrl:
