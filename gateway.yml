@@ -19,6 +19,10 @@ spring:
           uri: lb://service3
           predicates:
               - Path=/service3/**
+        - id: facade-service
+          uri: lb://facade-service
+          predicates:
+              - Path=/facade-service/**
 ---
 spring:
   profiles: docker
